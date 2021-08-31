@@ -1,0 +1,193 @@
+
+body {
+    color: #413f3f;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 3.7rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 2.7rem;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+h3 {
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* Title section */
+
+#title {
+    background-color: #F25287;
+    color: white;
+}
+
+.container-fluid {
+    padding: 0.5% 10% 7.5%;
+}
+
+
+/* Navigation bar */
+
+.navbar {
+    padding-bottom: 4.5rem;
+}
+
+.navbar-brand {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Other title section elements */
+.title-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* .btn-dark:hover {
+    background-color: rgba(0,0,0,.6);
+} */
+
+.image-position {
+    position: relative;
+}
+.title-image {
+    right: 16%;
+    position: absolute;
+    transform: rotate(13deg);
+    width: 52%;
+}
+
+@media (max-width: 1000px) {
+
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+/* Features section */
+
+#features {
+    background-color: white;
+    line-height: 1.6;
+    padding: 6% 13% 7%;
+    position: relative;
+    /* z-index: 1; not necessary since this section comes after the image in the html code*/
+}
+
+.feature-box {
+    padding: 0 2%;
+    text-align: center;
+}
+
+.feature-icon {
+    color: #df306a;
+    font-size: 3.2rem;
+    margin: 2.5rem 0 1rem;
+}
+
+.fas:hover {
+    color: #F25287;
+}
+
+/* Testimonials */
+
+#testimonials {
+    background-color: #f8729f;
+    color: white;
+    text-align: center;
+}
+
+.testimonial-image {
+    border-radius: 100%;
+    margin: 15px;
+    width: 5.5rem;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+}
+
+.carousel-item {
+    /* height: 450px; */
+    padding: 5% 13%;
+}
+
+/* Press */
+
+#press {
+    background-color: #f8729f;
+    padding: 0 13% 5%;
+    text-align: center;
+}
+
+.press-image {
+    margin: 0 3%;
+    width: 15%;
+}
+
+/* Pricing */
+
+#pricing {
+    padding: 7% 13%;
+    text-align: center;
+}
+
+.pricing-subtitle {
+    margin: 2% 0 5%;
+}
+
+.card {
+    margin: 5% 5%;
+}
+
+.invisible {
+    color: transparent;
+}
+
+/* Call to action section */
+
+#cta {
+    background-color: #F25287;
+    color: white;
+    padding: 7% 13% 5%;
+    text-align: center;
+}
+
+/* Footer */
+
+#footer {
+    padding: 5% 13% 4%;
+    text-align: center;
+}
+
+.footer-icon {
+    color: #413f3f;
+    font-size: 1.2rem;
+    margin: 0 1.5% 3%;
+    text-decoration: none;
+}
