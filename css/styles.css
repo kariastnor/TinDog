@@ -32,10 +32,13 @@ h4 {
     color: white;
 }
 
-.container-fluid {
-    padding: 1rem 10rem 7rem;
+.title-padding {
+    padding: 0.5% 11%;
 }
 
+.title-col-padding {
+    padding-bottom: 7%;
+}
 
 /* Navigation bar */
 
