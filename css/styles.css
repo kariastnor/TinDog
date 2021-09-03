@@ -1,36 +1,14 @@
+html {
+    font-size: 16px;
+}
 
 body {
     color: #413f3f;
     font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
-h1 {
-    font-size: 3.7rem;
-    font-weight: 900;
-    line-height: 1.5;
-}
-
-@media (max-width: 500px) {
-    h1 {
-        font-size: 2.5rem;
-    }
-}
-
-/* Scale down testimonial font size for mobile */
-
-h2 {
-    font-size: 2.7rem;
-    font-weight: 800;
-    line-height: 1.4;
-}
-
-@media (max-width: 500px) {
-    h2 {
-        font-size: 2rem;
-    }
-}
-
-h3 {
+h2, h3 {
     font-weight: 800;
 }
 
@@ -39,15 +17,45 @@ h4 {
     font-weight: 700;
 }
 
-/* Title section */
+/* Headings */
 
-#title {
+.big-heading {
+    font-size: 3.7rem;
+    font-weight: 900;
+    line-height: 1.5;
+}
+
+@media (max-width: 500px) {
+    .big-heading {
+        font-size: 2.5rem;
+    }
+}
+
+.section-heading {
+    font-size: 2.7rem;
+}
+
+@media (max-width: 500px) {
+    .section-heading {
+        font-size: 2rem;
+    }
+}
+
+/* Containers */
+
+.container-fluid {
+    padding: 7% 13%;
+}
+
+/* Sections */
+
+.coloured-section {
     background-color: #F25287;
     color: white;
 }
 
-.title-padding {
-    padding: 0.5% 13% 8%;
+.white-section {
+    background-color: white;
 }
 
 /* Navigation bar */
@@ -71,7 +79,13 @@ h4 {
     font-weight: 300;
 }
 
-/* Other title section elements */
+/* Title section */
+
+#title .container-fluid {
+    padding: 0.5% 13% 8%;
+    text-align: left;
+}
+
 .title-button {
     margin: 5% 3% 5% 0;
 }
@@ -105,16 +119,13 @@ h4 {
 /* Features section */
 
 #features {
-    background-color: white;
     line-height: 1.6;
-    padding: 6% 13% 7%;
     position: relative;
     /* z-index: 1; not necessary since this section comes after the image in the html code*/
 }
 
 .feature-box {
     padding: 0 2%;
-    text-align: center;
 }
 
 .feature-icon {
@@ -131,8 +142,6 @@ h4 {
 
 #testimonials {
     background-color: #f8729f;
-    color: white;
-    text-align: center;
 }
 
 .testimonial-image {
@@ -143,17 +152,19 @@ h4 {
 
 .testimonial-text {
     font-size: 3rem;
+    line-height: 1.4;
+}
+
+@media (max-width: 500px) {
+    .testimonial-text {
+        font-size: 1.7rem;
+    }
 }
 
 @media (max-width: 800px) {
     .testimonial-text {
         font-size: 2rem;
     }
-}
-
-.carousel-item {
-    /* height: 450px; */
-    padding: 5% 13%;
 }
 
 /* Press */
@@ -171,11 +182,6 @@ h4 {
 
 /* Pricing */
 
-#pricing {
-    padding: 7% 13%;
-    text-align: center;
-}
-
 .pricing-subtitle {
     margin: 2% 0 5%;
 }
@@ -189,13 +195,6 @@ h4 {
 }
 
 /* Call to action section */
-
-#cta {
-    background-color: #F25287;
-    color: white;
-    padding: 7% 13% 5%;
-    text-align: center;
-}
 
 .cta-button {
     margin: 5% 3% 5% 0;
@@ -212,11 +211,6 @@ h4 {
     }
 }
 /* Footer */
-
-#footer {
-    padding: 5% 13% 4%;
-    text-align: center;
-}
 
 .footer-icon {
     color: #413f3f;
